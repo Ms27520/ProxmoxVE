@@ -1,0 +1,40 @@
+{
+  "name": "Valkey ",
+  "slug": "valkey",
+  "categories": [
+    8
+  ],
+  "date_created": "2024-05-02",
+  "type": "ct",
+  "updateable": false,
+  "privileged": false,
+  "interface_port": null,
+  "documentation": "https://valkey.io/topics/",
+  "website": "https://valkey.io/",
+  "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons/webp/valkey.webp",
+  "config_path": "Debian /etc/valkey/valkey.conf",
+  "description": "Valkey is an open source (BSD licensed), in-memory data structure store used as a database, cache, message broker, and streaming engine.",
+  "install_methods": [
+    {
+      "type": "default",
+      "script": "ct/valkey.sh",
+      "resources": {
+        "cpu": 1,
+        "ram": 1024,
+        "hdd": 4,
+        "os": "debian",
+        "version": "13"
+      }
+    }
+  ],
+  "default_credentials": {
+    "username": null,
+    "password": null
+  },
+  "notes": [
+    {
+      "text": "Valkey Configuration: `nano /etc/valkey/valkey.conf`",
+      "type": "info"
+    }
+  ]
+}
